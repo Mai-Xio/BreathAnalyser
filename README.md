@@ -6,8 +6,8 @@ Team Nyx
 
 Code created by 
 
-Noor Mohammadi
-Wouribindi Lalith Sai
-Devi Sri Sai Chaitanya Devaganugula
+Noor Mohammadi,
+Wouribindi Lalith Sai,
+Devi Sri Sai Chaitanya Devaganugula.
 
 For Echo Hackathon - IIT (BHU) Varanasi Campus
