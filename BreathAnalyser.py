@@ -1,22 +1,13 @@
-# =============================================================
+
 # ECONyx FULL-PPT PROTOTYPE (Colab) — "Breath-Analyzer (Nyx)"
-# ONE CELL 
-#
-# Includes ALL PPT items:
-# - Inputs: AQI stations (OpenAQ), weather (Open-Meteo), traffic density (OSM proxy)
-# - Intelligence: IDW interpolation + ML forecasting (12–24h) via XGBoost
-# - Decision: Zone classification (Red/Green) + Green corridor routing
-# - User: Interactive Leaflet map (Folium)
-# - Alerts: Threshold logic (entry + route sampling)
-# - Backend: FastAPI file auto-generated (nyx_api.py)
-# - Impact metrics: accuracy + exposure reduction + compliance simulation
-# =============================================================
+
+
 
 import sys, os, json, math, time, hashlib, subprocess
 from datetime import datetime, timedelta, timezone
 
 # -------------------------
-# 0) Install deps (Colab-safe)
+# 0) Install deps 
 # -------------------------
 def pipq(pkgs):
     subprocess.check_call([sys.executable, "-m", "pip", "-q", "install"] + pkgs)
@@ -81,7 +72,7 @@ except Exception:
 from IPython.display import display
 
 # -------------------------
-# 1) CONFIG (edit these only)
+# 1) CONFIG
 # -------------------------
 PROJECT_NAME = "Breath-Analyzer (Nyx) - Hyper-Local Predictive Air Quality Intelligence"
 
@@ -1176,6 +1167,6 @@ print(" - Alerts:", alerts_path)
 print(" - Metadata:", meta_path)
 print(" - Backend file:", "nyx_api.py")
 
-# Preview safely (no IFrame to avoid Colab JS fetch errors)
+
 if PREVIEW_MAP_INLINE:
     display(m)
