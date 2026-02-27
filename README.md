@@ -10,4 +10,4 @@ Noor Mohammadi
 Wouribindi Lalith Sai
 Devi Sri Sai Chaitanya Devaganugula
 
-For Echo Hackathon - IIT Banaras 
+For Echo Hackathon - IIT (BHU) Varanasi Campus
